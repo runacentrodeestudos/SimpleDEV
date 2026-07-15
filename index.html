@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>simpleDEV</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">simpleDEV</div>
+
+    <button id="windowBtn">
+        Window
+    </button>
+
+    <button id="downloadBtn">
+        Download ZIP
+    </button>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="panel-header">
+            Files
+        </div>
+
+        <div id="fileList"></div>
+
+        <div id="dropZone">
+            Drag & Drop Files Here
+        </div>
+
+    </aside>
+
+    <section class="editor-panel">
+
+        <div class="panel-header">
+            Editor
+        </div>
+
+        <div id="editor"></div>
+
+    </section>
+
+    <section class="preview-panel">
+
+        <div class="panel-header">
+            Live Preview
+        </div>
+
+        <iframe id="preview"></iframe>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
